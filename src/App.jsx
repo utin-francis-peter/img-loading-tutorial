@@ -21,9 +21,9 @@ function App() {
             <div className="hero-desc-container">
               <p>With the right mind, you will</p>
               <h1 className="fs-lg">SUCCEED</h1>
-              <p className="hero-desc container">
+              <p className="hero-desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                iusto assumenda corporis reprehenderit maxime non veniam, optio!
+                iusto assumenda corporis reprehenderit maxime non veniam.
               </p>
               <button className="btn-lg">BELIEVE IN YOU</button>
             </div>
