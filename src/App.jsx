@@ -10,7 +10,7 @@ function App() {
           <nav>
             <ul>
               <li>
-                <a href="#">nav</a>
+                <a href="/">nav</a>
               </li>
             </ul>
           </nav>
