@@ -1,9 +1,31 @@
+import { useEffect, useState } from "react";
 import "./styles/styles.scss";
+import ClipLoader from "react-spinners/ClipLoader";
 
 function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    if (document.readyState === "complete") {
+      setIsLoaded(true);
+    } else {
+      if (typeof window !== "undefined") {
+        window.addEventListener("load", () => {
+          const heroImg = document.getElementsByTagName("img")[0];
+          if (heroImg.complete && heroImg.naturalHeight !== 0)
+            setIsLoaded(true);
+        });
+      }
+    }
+  });
+
   return (
     <>
-      <div className="app">
+      <div className="spinner" style={{ display: isLoaded ? "none" : "flex" }}>
+        <ClipLoader size={70} loading={true} color="#f6921e" />
+      </div>
+
+      <div className="app" style={{ display: isLoaded ? "block" : "none" }}>
         <header className="container">
           <h3>logo</h3>
 
