@@ -44,8 +44,8 @@ function App() {
               <p>With the right mind, you will</p>
               <h1 className="fs-lg">SUCCEED</h1>
               <p className="hero-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                iusto assumenda corporis reprehenderit maxime non veniam.
+                It shapes your beliefs, attitude, and perspective, enabling you
+                to overcome challenges, stay motivated, and seize opportunities.
               </p>
               <button className="btn-lg">BELIEVE IN YOU</button>
             </div>
